@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="page1">
+      <div class="navbar">
+        <div class="left">
+          <a href="#page1">Afaf Suleiman</a>
+        </div>
+        <div class="right" id="sideMenu">
+          <a href="#page2" class="green">About me</a>
+          <a href="#page3">My skills</a>
+          <a href="#page4">My Projects</a>
+          <a href="./pic/CV-Afaf.Suleiman.pdf" download="CV.pdf">CV</a>
+          <a href="#page5">Contact</a>
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+        </div>
+        <i class="fa fa-align-justify" onclick="openMenu()"></i>
+      </div>
+      <main class="flex-page1">
+        <div>
+          <h1>Hi There, I am Afaf.</h1>
+          <p>
+            I'm a fresh front-end developer, designing user-friendly websites
+            with a focus on usability and design
+          </p>
+        </div>
+        <img src="./pic/myImage.jpg" alt="backImage" />
+      </main>
+    </div>
+    <div class="between-side1">
+      <div class="between-side1-grid">
+        <img src="./pic/t-left.png" />
+        <img src="./pic/t-left.png" />
+        <div>Fresh End Developer</div>
+        <img src="./pic/t-left.png" />
+        <img src="./pic/t-left.png" />
+      </div>
+    </div>
+    <section class="page2" id="page2">
+      <div class="page2-grid">
+        <img src="./pic/LeftImage.png" />
+        <h1>About me</h1>
+        <h3>Hello, My name is <span>Afaf</span></h3>
+        <img src="./pic/MyPic.jpeg" />
+
+        <p>
+          I recently completed a 6-month frontend programming course at
+          Kodehode, where I enhanced my skills in HTML, CSS, JavaScript, React,
+          Node.js, and Figma. It was a rewarding experience to refresh my
+          knowledge and delve into new technologies.
+          <br /><br />
+          As a front end developer, I thrive on creating user-friendly websites
+          that prioritize both functionality and visual appeal. I enjoy the
+          challenge of finding the perfect balance between usability and design,
+          ensuring that every website I work on is intuitive and engaging for
+          users.
+          <br /><br />
+          When I'm not coding, you can find me outdoors, taking walks in nature.
+          I find peace and rejuvenation in the tranquility of natural
+          landscapes, and these moments allow me to recharge and clear my mind.
+          <br /><br />
+          Continuous learning is important to me, and I am constantly looking
+          for opportunities to expand my knowledge and skills. Whether through
+          online courses, workshops, or personal projects, I am committed to
+          growing as a developer and as an individual.
+        </p>
+
+        <img src="./pic/RightImage.png" />
+      </div>
+    </section>
+
+    <div class="between-side2">
+      <div class="between-side2-grid">
+        <img src="./pic/t-right.png" />
+        <img src="./pic//t-right.png" />
+        <img src="./pic/t-right.png" />
+        <div>
+          <h3>My interest is creating interactive Apps</h3>
+        </div>
+        <img src="./pic/t-right.png" />
+      </div>
+    </div>
+
+    <section class="page3" id="page3">
+      <div class="page3-grid">
+        <img src="./pic/LeftImage.png" />
+        <h1>My skills</h1>
+
+        <img src="./pic/css.png" />
+        <label for="">CSS</label>
+
+        <img src="./pic/figma.png" />
+        <label for="">Figma</label>
+
+        <img src="./pic/git.png" />
+        <label for="">Git</label>
+
+        <img src="./pic/Html.png" />
+        <label for="">HTML</label>
+
+        <img src="./pic/javascript.png" />
+        <label for="">JavaScript</label>
+
+        <img src="./pic/RightImage.png" />
+      </div>
+    </section>
+    <div class="between-side3"></div>
+    <section class="page4" id="page4">
+      <!-- <img src="./pic/LeftImage.png" /> -->
+      <h1>My Projects</h1>
+
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./pic/Drum-Machine.png" />
+          <!-- <div class="text">First Project</div> -->
+          <div class="btn-flex">
+            <div class="info-project-flex">
+              <label>JS</label>
+              <label>CSS</label>
+            </div>
+            <button>
+              <a
+                href="https://kodehode-stavanger.github.io/javascript-advanced-project-drum-machine-Afaf56/"
+                >Explore More →</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./pic/javaApi.png" />
+          <!-- <div class="text">Second project</div> -->
+          <div class="btn-flex">
+            <div class="info-project-flex">
+              <label>JS</label>
+              <label>CSS</label>
+            </div>
+            <button>
+              <a
+                href="https://kodehode-stavanger.github.io/javascript-advanced-project-api-Afaf56/"
+                >Explore More →</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./pic/figma-project.png" />
+          <!-- <div class="text">Third Project</div> -->
+          <div class="btn-flex">
+            <div class="info-project-flex">
+              <label>FIGMA</label>
+            </div>
+            <button>
+              <a
+                href="https://www.figma.com/file/wcXi3th0UoALEFzG5cEWal/Project-(Copy)?type=design&node-id=0-1&mode=design&t=p1VTmmm1sHO8FboM-0"
+                >Explore More →</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section class="page5" id="page5">
+      <div class="contact">
+        <h1>Contact Me</h1>
+
+        <form
+          name="submit-to-google-sheet"
+          action="https://script.google.com/macros/s/AKfycbyrQfRyz3soXVfhTHbf9yDOzTH_mQThS-vaH-44BC54CPpErZTFOrEdIR2hZjHM_MRF/exec"
+        >
+          <div class="contact-details">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="tel" name="tel" placeholder="Your Phone" required />
+          </div>
+          <div class="contact-msg">
+            <textarea
+              name="msg"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <span id="msg"></span>
+      </div>
+
+      <div class="address">
+        <div>
+          <h3>Email Me</h3>
+          <p>afaf56.kodehode@gmail.com</p>
+        </div>
+        <div>
+          <button>
+            <a href="./pic/CV-Afaf.Suleiman.pdf" download>Download my CV</a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
