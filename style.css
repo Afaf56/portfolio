@@ -135,7 +135,8 @@ a.green {
   grid-column: 2/4;
   justify-self: end;
   align-self: center;
-  font-size: 45px;
+  font-size: 40px;
+  gap: 10px 10px;
 }
 .between-side1 img:nth-child(5) {
   grid-column: 4/5;
@@ -169,6 +170,7 @@ a.green {
   width: 100%;
   min-height: 100vh;
   padding: 100px 0px;
+  column-gap: 13px;
 }
 .page2-grid img:nth-child(1) {
   grid-row: 1/2;
@@ -734,7 +736,7 @@ a.green {
   }
 
   .between-side1 div:nth-child(3) {
-    font-size: 30px;
+    font-size: 95%;
     font-weight: bold;
   }
   .between-side1 img:nth-child(5) {
@@ -756,15 +758,20 @@ a.green {
     min-height: 700px;
   }
   .page2-grid {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
   }
+  .square {
+    display: none;
+  }
 
-  .page2-grid img:nth-child(1) {
-    /* grid-row: 1/2; */
+  /* .page2-grid img:nth-child(1) {
+    grid-row: 1/2;
     height: 100px;
     width: 100px;
     justify-self: start;
-  }
+  } */
 
   .page2-grid h1 {
     font-size: 25px;
@@ -773,10 +780,11 @@ a.green {
   .page2-grid h3 {
     font-size: 20px;
     grid-column: 2/4;
+    align-self: center;
   }
   .page2-grid p {
     width: 100%;
-    padding: 40px 0px;
+    padding: 40px 10px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.3rem;
@@ -793,11 +801,14 @@ a.green {
     align-self: center;
   }
 
-  .page2-grid img:nth-child(6) {
+  /* .page2-grid img:nth-child(6) {
     height: 80px;
     width: 80px;
     grid-column: 4/5;
     grid-row: 3/4;
+  } */
+  .page2 button {
+    align-self: center;
   }
 }
 
