@@ -307,7 +307,8 @@ a.green {
 }
 
 .page3 {
-  background: url("./pic/background-Skills.png");
+  /* background: url("./pic/background-Skills.png"); */
+
   border: 2px solid red;
 }
 
@@ -316,7 +317,13 @@ a.green {
   /* grid-template-columns: repeat(7, 0.3fr, auto); */
   grid-template-columns: 0.4fr 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr 0.3fr;
   grid-template-rows: repeat(5, auto);
-  background-color: var(--smokeWhiteColor);
+  /* background-color: var(--smokeWhiteColor); */
+  background-image: url("./pic/backGround.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100000000;
+  opacity: 0.7;
   height: 100vh;
   width: 100%;
 
@@ -328,11 +335,13 @@ a.green {
   grid-row: 1/2;
   justify-self: start;
   align-self: center;
+  z-index: 1;
   height: 200px;
   width: 200px;
 }
 .page3-grid h1:nth-child(2) {
   grid-column: 2/4;
+  z-index: 1;
   justify-self: start;
   align-self: center;
   padding: 20px 0;
@@ -340,30 +349,36 @@ a.green {
 
 .page3-grid img:nth-child(3) {
   grid-column: 2/5;
+  z-index: 1000000;
   justify-self: end;
   align-self: end;
   height: 70px;
   width: 70px;
+  box-shadow: 0 0 20px var(--light-green);
   border-radius: 20px;
   border: 2px solid var(--light-green);
 }
 .page3-grid label:nth-child(4) {
   grid-column: 5/6;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   font-size: 20px;
 }
 .page3-grid img:nth-child(5) {
   grid-column: 2/3;
+  z-index: 1000000;
   justify-self: end;
   align-self: end;
   height: 70px;
   width: 70px;
   border-radius: 20px;
+  box-shadow: 0 0 20px var(---pink-color);
   border: 2px solid var(--pink-color);
 }
 .page3-grid label:nth-child(6) {
   grid-column: 3/4;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   font-size: 20px;
@@ -371,15 +386,18 @@ a.green {
 
 .page3-grid img:nth-child(7) {
   grid-column: 5/7;
+  z-index: 1000000;
   justify-self: end;
   align-self: end;
   height: 70px;
   width: 70px;
   border-radius: 20px;
+  box-shadow: 0 0 20px var(--green-color);
   border: 2px solid var(--green-color);
 }
 .page3-grid label:nth-child(8) {
   grid-column: 7/8;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   font-size: 20px;
@@ -387,17 +405,20 @@ a.green {
 .page3-grid img:nth-child(9) {
   grid-column: 2/4;
   grid-row: 4/6;
+  z-index: 1000000;
   justify-self: end;
   align-self: end;
   height: 70px;
   width: 70px;
   border-radius: 20px;
+  box-shadow: 0 0 20px var(--pink-color);
   border: 2px solid var(--pink-color);
 }
 
 .page3-grid label:nth-child(10) {
   grid-column: 4/5;
   grid-row: 5/6;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   font-size: 20px;
@@ -407,18 +428,21 @@ a.green {
 .page3-grid img:nth-child(11) {
   grid-column: 4/6;
   grid-row: 4/5;
+  z-index: 1000000;
   justify-self: end;
   align-self: end;
   height: 70px;
   width: 70px;
 
   border-radius: 20px;
+  box-shadow: 0 0 20px var(--light-green);
   border: 2px solid var(--light-green);
 }
 
 .page3-grid label:nth-child(12) {
   grid-column: 6/7;
   grid-row: 4/5;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   font-size: 20px;
@@ -426,6 +450,7 @@ a.green {
 .page3-grid img:nth-child(13) {
   grid-column: 7/8;
   grid-row: 4/6;
+  z-index: 1000000;
   justify-self: start;
   align-self: end;
   height: 100px;
